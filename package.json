@@ -1,6 +1,6 @@
 {
-  "name": "battlegrounds",
-  "version": "1.5.2",
+  "name": "battlegrounds-revisited",
+  "version": "1.5.3",
   "description": "PUBG Web API wrapper for nodejs",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feed4rz/node-battlegrounds.git"
+    "url": "git+https://github.com/jylescoad-ward/node-battlegrounds-revisited.git"
   },
   "keywords": [
     "pubg",
     "web",
     "api"
   ],
-  "author": "feed4rz",
+  "author": [
+    "feed4rz",
+    "jylescoad-ward"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/feed4rz/node-battlegrounds/issues"
+    "url": "https://github.com/jylescoad-ward/node-battlegrounds-revisited/issues"
   },
-  "homepage": "https://github.com/feed4rz/node-battlegrounds#readme",
+  "homepage": "https://github.com/jylescoad-ward/node-battlegrounds-revisited#readme",
   "dependencies": {
     "axios": "^0.18.0"
   }

@@ -1,10 +1,10 @@
-# PUBG Web API wrapper for nodejs
+# PUBG Web API wrapper for node.js
 - [Full Documentation (Source)](https://documentation.playbattlegrounds.com)
 - [Installation](#install)
 - [To Do](#todo)
 - [Usage](#usage)
 - [Description](#description)
-- [Examples](https://github.com/feed4rz/node-battlegrounds/tree/master/examples)
+- [Examples](https://github.com/jylescoad-ward/node-battlegrounds-revisited/tree/master/examples)
 - [Classes](#classes)
 - - [API](#apiapikey-platform)
 - - [Player](#player)
@@ -24,18 +24,18 @@
 - [Tournaments](https://documentation.pubg.com/en/tournaments-endpoint.html)
 
 # Install
-Clone this repo and include **index.js** or install via npm:
+Install via npm:
 ```
-npm install battlegrounds
+npm install battlegrounds-revisited
 ```
 
 
 # Usage
 Requiring a module returns [API](#api) class:
 ```JS
-const battlegrounds = require('battlegrounds')
+const battlegrounds = require('battlegrounds-revisited')
 
-const api = new battlegrounds(APIKEY, 'pc-eu')
+const api = new battlegrounds(APIKEY)
 
 // Get a player
 const res = await api.getPlayers({ names: ['shroud'] })

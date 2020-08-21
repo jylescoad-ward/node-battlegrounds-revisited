@@ -16,14 +16,15 @@ const RequestError = require('../errors/RequestError.js')
 class API {
   constructor(apikey, platform) {
     this.apikey = apikey
-    this.platform = platform || 'pc-eu'
+    this.platform = platform || 'steam'
   }
 
   async _req(url) {
     const baseURL = 'https://api.playbattlegrounds.com/shards'
     const headers = {
-      'Authorization': this.apikey,
-      'Accept': 'application/vnd.api+json'
+      'Authorization': `Bearer ${this.apikey}`,
+      'Accept': 'application/vnd.api+json'/*,
+	  'Access-Control-Allow-Origin': '*'*/
     }
 
     /* Making sure known statuses wont cause unhandled rejections */
@@ -132,7 +133,6 @@ class API {
 
     try {
       const res = await this._req(path)
-
       return new Player(res.data, this)
     } catch(err) {
       throw err
