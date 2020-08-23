@@ -20,11 +20,10 @@ class API {
   }
 
   async _req(url) {
-    const baseURL = 'https://api.playbattlegrounds.com/shards'
+    const baseURL = 'http://api.tournament.jyles.club/shards'
     const headers = {
       'Authorization': `Bearer ${this.apikey}`,
-      'Accept': 'application/vnd.api+json'/*,
-	  'Access-Control-Allow-Origin': '*'*/
+      'Accept': 'application/vnd.api+json'
     }
 
     /* Making sure known statuses wont cause unhandled rejections */
