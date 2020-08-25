@@ -1,6 +1,6 @@
 {
   "name": "battlegrounds-revisited",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "PUBG Web API wrapper for nodejs",
   "main": "index.js",
   "scripts": {

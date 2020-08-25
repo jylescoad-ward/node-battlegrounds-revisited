@@ -20,7 +20,7 @@ class API {
   }
 
   async _req(url) {
-    const baseURL = 'http://api.dariox.club/tournament/shards'
+    const baseURL = 'http://api.dxcdn.net/tournament/shards'
     const headers = {
       'Authorization': `Bearer ${this.apikey}`,
       'Accept': 'application/vnd.api+json'
